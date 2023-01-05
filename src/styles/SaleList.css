@@ -1,0 +1,8 @@
+.saleList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+}

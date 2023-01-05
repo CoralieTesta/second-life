@@ -1,0 +1,52 @@
+.navList {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(250, 239, 239);
+}
+
+header a:hover {
+    color: rgb(69, 40, 40);
+}
+
+.header {
+    background-color: rgb(167, 130, 130);
+    
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+.siteName {
+    padding-top: 25px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+.navEl {
+    
+    margin-bottom: 35px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width:500px) {
+    .siteName {
+        font-size: 20px;
+    }
+    .navEl {
+        font-size: 10px;
+    }
+    
+}
