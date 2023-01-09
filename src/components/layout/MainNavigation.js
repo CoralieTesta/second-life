@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
 import "../../styles/MainNavigation.css"
+import { useContext } from "react"
+import FavoritesContext from "../../store/favorites-context"
 
 function MainNavigation() {
+    const favoritesCtx = useContext(FavoritesContext)
+
     return(
         <header className="header">
             <div className="siteName"> 
@@ -17,6 +21,7 @@ function MainNavigation() {
                     </li>
                     <li className="navEl">
                         <Link to='/favorite'>Vos Favoris</Link>
+                        <span className="navTotalFav">{favoritesCtx.totalFavorites}</span>
                     </li>
                 </ul>
             </nav>

@@ -15,6 +15,7 @@
 .item-image {
     width: 125px;
     margin : auto;
+    cursor: pointer;
 }
 
 img {

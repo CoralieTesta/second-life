@@ -41,6 +41,15 @@ header a:hover {
     padding-bottom: 15px;
 }
 
+.navTotalFav {
+    background-color: rgb(250, 239, 239);
+    border: solid rgb(250, 239, 239);
+    border-radius: 25px;
+    margin-left: 5px;
+    color: rgb(127, 93, 93);
+    padding: 2px 4px 2px 4px;
+}
+
 @media screen and (max-width:500px) {
     .siteName {
         font-size: 20px;
@@ -50,3 +59,4 @@ header a:hover {
     }
     
 }
+
