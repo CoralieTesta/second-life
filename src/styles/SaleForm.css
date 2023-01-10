@@ -1,17 +1,17 @@
-.saleForm-fieldset {
+.saleForm__fieldset {
     width: 40%;
     margin: auto;
 }
-.form-element {
+.saleForm__element {
     margin: 15px 0px 20px 15px;
     font-size: 20px;
 }
 
-.form-element input {
+.saleForm__element input {
     margin-left: 6px;
     font-size: 15px;
 }
-.form-element select {
+.saleForm__element select {
     margin-left: 6px;
     font-size: 15px;
 }
@@ -29,8 +29,8 @@
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+  	margin-top:-4px;
+  	font-weight:700;
 }
 
 .button-blue:hover{

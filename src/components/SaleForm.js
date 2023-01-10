@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function SaleForm({onAddItem}) {
     const [isSex, setIsSex] = useState('')
-    const [isCategory, setIsCategory] = useState('')
+    const [isCategory, setIsCategory] = useState('T-shirt')
 
     function handleChange(e) {
         setIsSex(e.currentTarget.value)
@@ -36,32 +36,32 @@ function SaleForm({onAddItem}) {
     }
     
     return(
-        <div>
+        <div className='saleForm'>
             <form onSubmit={submitHandler}>
-                <fieldset className='saleForm-fieldset'>
+                <fieldset className='saleForm__fieldset'>
                     <legend>Complétez le formulaire</legend>
-                    <div className="form-element">
+                    <div className="saleForm__element">
                         <label htmlFor="title">Nom de l'article </label>
                         <input type="text" id="title" ref={titleInputRef} autoFocus/>
                     </div>
-                    <div className="form-element">
+                    <div className="saleForm__element">
                         Sexe 
-                        <input type="radio" name="sex" id="man" value='man' 
+                        <input type="radio" name="sex" id="Homme" value='Homme' 
                         onChange={handleChange}/>
-                        <label htmlFor="man">Homme </label>
+                        <label htmlFor="Homme">Homme </label>
                         
-                        <input type="radio" name="sex" id="woman" value='woman' 
+                        <input type="radio" name="sex" id="Femme" value='Femme' 
                         onChange={handleChange}/>
-                        <label htmlFor="woman">Femme </label>
+                        <label htmlFor="Femme">Femme </label>
 
-                        <input type="radio" name="sex" id="other" value='other' 
+                        <input type="radio" name="sex" id="Autre" value='Autre' 
                         onChange={handleChange}/>
-                        <label htmlFor="other">Autre </label>
+                        <label htmlFor="Autre">Autre </label>
                     </div>
-                    <div className="form-element">
+                    <div className="saleForm__element">
                         <label htmlFor="category">Catégorie </label>
                         <select name="category" id="category" onChange={handleChangeCategory}>
-                            <option value="Tshirt" >T-shirt</option>
+                            <option value="T-shirt" >T-shirt</option>
                             <option value="Pull">Pull</option>
                             <option value="Veste">Veste</option>
                             <option value="Pantalon">Pantalon</option>
@@ -69,13 +69,14 @@ function SaleForm({onAddItem}) {
                             <option value="Jupe">Jupe</option>
                             <option value="Bijou">Bijou</option>
                             <option value="Chaussures">Chaussures</option>
+                            <option value="Autre">Autre</option>
                         </select>
                     </div>
-                    <div className="form-element">
+                    <div className="saleForm__element">
                         <label htmlFor="image">Photo </label>
                         <input type="img" id="image" ref={imageInputRef} />
                     </div>
-                    <div className="form-element">
+                    <div className="saleForm__element">
                         <label htmlFor="price">Prix </label>
                         <input type="number" id="price" ref={priceInputRef} />
                     </div>

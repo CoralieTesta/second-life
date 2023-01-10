@@ -1,0 +1,13 @@
+.categories {
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+.categories__select {
+    cursor: pointer;
+}
+
+.categories__btn {
+    cursor: pointer;
+}
+

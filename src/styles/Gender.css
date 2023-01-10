@@ -1,0 +1,11 @@
+.gender {
+    text-align: right;
+}
+
+.gender__select {
+    cursor: pointer;
+}
+
+.gender__btn {
+    cursor: pointer;
+}

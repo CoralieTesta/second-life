@@ -10,6 +10,7 @@
 header a {
     text-decoration: none;
     color: rgb(250, 239, 239);
+    transition: color 300ms;
 }
 
 header a:hover {
@@ -21,7 +22,8 @@ header a:hover {
     
     align-items: center;
     justify-content: space-between;
-    align-items: baseline
+    align-items: baseline;
+    border-radius: 3px;
 }
 
 .siteName {

@@ -23,22 +23,38 @@ function SaleItem({title, sex, category, image, price, id}) {
         }
     }
     return(
-        <li className="item">
-            <div className='item-content'>
-                <div className="item-title">
+        <li className="saleItem">
+            <div className='saleItem__content'>
+                {itemIsFavorite && 
+                    <span onClick={toggleFavoriteStatusHandler} className='saleItem__heart'>
+                    ❤️
+                    </span>
+                }
+                <div className="saleItem__title">
                     <h3>{title}</h3>
                 </div>
-                <div className="item-image">
+                <div className="saleItem__image">
                     <img src={image} alt={title}/>
                 </div>
-                <div className="item-price">
+                <div className="saleItem__price">
                     {price}€
                 </div>
-                <div className="btn-favorite">
+                {itemIsFavorite ?
+                    (<div className="saleItem__btn saleItem__btn-remove">
+                        <button onClick={toggleFavoriteStatusHandler}>
+                            Retirez des favoris ❤️ 
+                        </button>
+                        
+                </div>) : 
+                    (<div className="saleItem__btn saleItem__btn-add">
                     <button onClick={toggleFavoriteStatusHandler}>
-                        {itemIsFavorite ? 'Retirez des ' : 'Ajoutez aux ' }Favoris ❤️ 
+                        Ajoutez aux Favoris ❤️ 
                     </button>
-                </div>
+            </div>
+
+                    ) }
+
+                
             </div>
         </li>
     )
